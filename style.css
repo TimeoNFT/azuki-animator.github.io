@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body{
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+}
+
+.header{
+  position: relative;
+  text-align: center;
+  color: #c03540;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.banner{
+  width: 2500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 90px;
+  margin-top: -350px;
+}
+
+.undertitle{
+  margin-top: -55px;
+  font-size: 25px;
+}
+
+.container {
+  padding-top: 40px;
+   margin: 0 auto;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "AZUKI1 AZUKI2 AZUKI3 AZUKI4"
+      "TEXT1 TEXT2 TEXT3 TEXT4";
+  }
+  
+  .AZUKI1 { grid-area: AZUKI1; 
+  width: 250px;}
+  
+  .AZUKI2 { grid-area: AZUKI2; 
+    width: 250px;}
+  
+  .AZUKI3 { grid-area: AZUKI3; 
+    width: 250px;}
+  
+  .AZUKI4 { grid-area: AZUKI4; 
+    width: 250px;}
+
+  .TEXT1 
+  { 
+    grid-area: TEXT1;
+    background-color: #fff; 
+    color: #000;
+    height: 150px;
+    width: 250px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+  
+  .TEXT2 
+  { 
+    grid-area: TEXT2;
+    background-color: #fff;
+    color: #000;
+    height: 150px;
+    width: 250px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+
+  .TEXT3 
+  { 
+    grid-area: TEXT3;
+    background-color: #fff;
+    color: #000;
+    height: 150px;
+    width: 250px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+
+  .TEXT4 
+  { 
+    grid-area: TEXT4;
+    background-color: #fff;
+    color: #000;
+    height: 150px;
+    width: 250px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+  }
+  
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+  content:url(./arrow.svg)
+}
+
+.animate{
+  text-align: center;
+  font-family: "Montserrat",sans-serif;
+  font-style: italic;
+}
+
+.azuki-color{
+  color: #c03540;
+}
+
+.animgrid {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "AzukiImg AnimateImg"
+    "ChooseAzuki AnimateAzuki";
+}
+
+.AzukiImg { grid-area: AzukiImg; }
+
+.AnimateImg { grid-area: AnimateImg; max-width:-5%; height:5%;}
+
+.ChooseAzuki { grid-area: ChooseAzuki; }
+
+.AnimateAzuki { grid-area: AnimateAzuki; }
+
+.selectape{
+  background-color: #11131c;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  border: 1px solid #b2bd78;
+}
+
+.azuki-button{
+    background-color: #c03540;
+    border-radius: 8px;
+    color: #000;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 3%;
+    margin: auto auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.azuki-button:disabled{
+  background-color: #ccc;
+    color: #666;
+    cursor: auto;
+  }
